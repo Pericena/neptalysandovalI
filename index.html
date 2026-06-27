@@ -1,1593 +1,986 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>U.E. Neptaly Sandoval I-Turno Mañana-Nivel Inicial y Primaria - La educación se trata de la excelencia académica</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikFlow · SaaS de Marketing Digital para TikTok</title>
+  <meta name="description"
+    content="Plataforma premium de marketing digital para TikTok. Analítica, automatización y campañas con IA." />
+  <meta name="keywords" content="TikTok, marketing digital, SaaS, analytics, automatización, IA" />
+  <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- Open Graph -->
+  <meta property="og:title" content="TikFlow · SaaS de Marketing Digital para TikTok" />
+  <meta property="og:description"
+    content="Gestiona, analiza y escala tu presencia en TikTok con nuestra plataforma todo-en-uno." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tikflow.dev" />
+  <meta property="og:image" content="https://tikflow.dev/assets/img/og-image.jpg" />
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TikFlow · SaaS de Marketing Digital para TikTok" />
+  <meta name="twitter:description"
+    content="Gestiona, analiza y escala tu presencia en TikTok con nuestra plataforma todo-en-uno." />
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-  <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
-  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body id="top">
+<body class="bg-[#0b0b0e] text-white font-manrope antialiased overflow-x-hidden">
 
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <h1>
-        <a href="#" class="logo">U.E. Neptaly Sandoval I</a>
-      </h1>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a href="#" class="logo">U.E. Neptaly Sandoval I</a>
-
-          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-toggler>Inicio</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-toggler>Acerca de</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#courses" class="navbar-link" data-nav-toggler>Cursos</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#event" class="navbar-link" data-nav-toggler>Evento</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-toggler>Blog</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-toggler>Contacto</a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <div class="header-actions">
-
-        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-
-        <a href="#" class="header-action-btn login-btn">
-          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-          <span class="span">login / register</span>
-        </a>
-
-        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
-  </header>
-
-
-
-
-
-  <!-- 
-    - #SEARCH BOX
-  -->
-
-  <div class="search-container" data-search-box>
-    <div class="container">
-
-      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <div class="search-wrapper">
-        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field">
-
-        <button class="search-submit" aria-label="Submit" data-search-toggler>
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-      </div>
-
+  <!-- ========== LOADER ========== -->
+  <div id="loader"
+    class="fixed inset-0 z-[9999] bg-[#0b0b0e] flex items-center justify-center transition-opacity duration-700">
+    <div class="flex flex-col items-center gap-4">
+      <div class="w-12 h-12 border-4 border-[#2563eb] border-t-transparent rounded-full animate-spin"></div>
+      <p class="text-sm text-gray-400 font-medium tracking-widest uppercase">Cargando...</p>
     </div>
   </div>
 
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="section-subtitle">MEJOR FUTURO DE APRENDIZAJE CON NOSOTROS</p>
-
-            <h2 class="h1 hero-title">La educación se trata de la excelencia académica</h2>
-
-            <p class="hero-text">
-              Información del proceso enseñanza-aprendizaje a nuestra unidad educativa.
-            </p>
-
-            <a href="#" class="btn btn-primary">
-              <span class="span">Empiece hoy</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-
-          </div>
-
-          <figure class="hero-banner">
-
-            <img src="./assets/images/logo/1.png" width="500" height="500" loading="lazy" alt="hero image"
-              class="w-100">
-
-            <img src="./assets/images/logo/2.png" width="318" height="352" loading="lazy" aria-hidden="true"
-              class="abs-img abs-img-1">
-
-            <img src="./assets/images/logo/2.png" width="200" height="280" loading="lazy" aria-hidden="true"
-              class="abs-img abs-img-2">
-
-          </figure>
-
-        </div>
-      </section>
-
-
-      <!---historia-->
-
-      <section class="hero" id="home" aria-label="hero">
-        <div class="container">
-          <figure class="hero-banner">
-            <img src="./assets/images/logo/1.png" width="500" height="500" loading="lazy" alt="hero image"
-              class="w-100">
-          </figure>
-
-          <div class="hero-content">
-
-            <p class="section-subtitle">Historia de la unidad educativa </p>
-
-            <p class="hero-text">
-              Historia
-              completa
-            </p>
-
-            <a href="#" class="btn btn-primary">
-              <span class="span">Ver Mas</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-
-          </div>
-        </div>
-      </section>
-
-
-
-      <!-- 
-        - #CATEGORY
-      
-
-      <section class="section category" aria-label="category">
-        <div class="container">
-
-          <p class="section-subtitle">Course Categories</p>
-
-          <h2 class="h2 section-title">Popular Topics To Learn</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="category-card">
-
-                <div class="card-icon">
-                  <ion-icon name="briefcase-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 card-title">
-                    <a href="#">Personal Development</a>
-                  </h3>
-
-                  <span class="card-meta">39 Course</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card">
-
-                <div class="card-icon">
-                  <ion-icon name="file-tray-full-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 card-title">
-                    <a href="#">Human Research</a>
-                  </h3>
-
-                  <span class="card-meta">24 Course</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card">
-
-                <div class="card-icon">
-                  <ion-icon name="color-palette-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 card-title">
-                    <a href="#">Art & Design</a>
-                  </h3>
-
-                  <span class="card-meta">39 Course</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card">
-
-                <div class="card-icon">
-                  <ion-icon name="layers-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 card-title">
-                    <a href="#">Business Management</a>
-                  </h3>
-
-                  <span class="card-meta">39 Course</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card">
-
-                <div class="card-icon">
-                  <ion-icon name="laptop-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 card-title">
-                    <a href="#">Web Development</a>
-                  </h3>
-
-                  <span class="card-meta">39 Course</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card">
-
-                <div class="card-icon">
-                  <ion-icon name="thumbs-up-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 card-title">
-                    <a href="#">Lifestyle</a>
-                  </h3>
-
-                  <span class="card-meta">39 Course</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card">
-
-                <div class="card-icon">
-                  <ion-icon name="headset-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 card-title">
-                    <a href="#">Digital Marketing</a>
-                  </h3>
-
-                  <span class="card-meta">39 Course</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card">
-
-                <div class="card-icon">
-                  <ion-icon name="server-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 card-title">
-                    <a href="#">Data Sciences</a>
-                  </h3>
-
-                  <span class="card-meta">39 Course</span>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card">
-
-                <div class="card-icon">
-                  <ion-icon name="medkit-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <h3 class="h3 card-title">
-                    <a href="#">Health & Fitness</a>
-                  </h3>
-
-                  <span class="card-meta">39 Course</span>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>  
-      
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
-
-          <figure class="about-banner">
-
-            <img src="./assets/images/banner/2.png" width="450" height="590" loading="lazy" alt="about banner"
-              class="w-100 about-img">
-
-            <img src="./assets/images/banner/1.png" width="188" height="242" loading="lazy" aria-hidden="true"
-              class="abs-img abs-img-1">
-
-            <img src="./assets/images/banner/3.png" width="150" height="200" loading="lazy" aria-hidden="true"
-              class="abs-img abs-img-2">
-
-          </figure>
-
-
-       
-          <div class="about-content">
-
-            <p class="section-subtitle">¿Quienes Somos?</p>
-
-            <h2 class="h2 section-title">¿Quienes Somos?</h2>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-
-                <div class="item-icon item-icon-1">
-                  <img src="./assets/images/about-icon-1.png" width="30" height="30" loading="lazy" aria-hidden="true">
-                </div>
-
-                <div>
-                  <h3 class="h3 item-title">MISIÓN</h3>
-
-                  <p class="item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor incididunt dolore magna
-                    aliqua.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="about-item">
-
-                <div class="item-icon item-icon-2">
-                  <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
-                </div>
-
-                <div>
-                  <h3 class="h3 item-title">VISIÓN</h3>
-
-                  <p class="item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor incididunt dolore magna
-                    aliqua.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="about-item">
-
-                <div class="item-icon item-icon-3">
-                  <img src="./assets/images/about-icon-3.png" width="30" height="30" loading="lazy" aria-hidden="true">
-                </div>
-
-                <div>
-                  <h3 class="h3 item-title">OTROS</h3>
-
-                  <p class="item-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor incididunt dolore magna
-                    aliqua.
-                  </p>
-                </div>
-
-              </li>
-
-            </ul>
-
-            <a href="#" class="btn btn-primary">
-              <span class="span">Sobre nosotros</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-
-          </div>
-
-        
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #COURSE
-      -->
-
-      <section class="section course" id="courses" aria-label="course"
-        style="background-image: url('./assets/images/course-bg.jpg')">
-        <div class="container">
-
-          <p class="section-subtitle">Cursos Populares</p>
-
-          <h2 class="h2 section-title">Nuestros cursos populares</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/Popular/1.jpg" width="370" height="270" loading="lazy"
-                    alt="Competitive Strategy law for all Estudiantes" class="img-cover">
-                </figure>
-
-                <div class="card-actions">
-
-                  <span class="badge">Intermediate</span>
-
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <ion-icon name="heart"></ion-icon>
-                  </button>
-
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">35 Lecciones</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Trabajos en el huerto escolar medicinal del 6to B de Primaria</a>
-                  </h3>
-
-                  <div class="rating-wrapper">
-
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <span class="rating-text">(18 Visto)</span>
-
-                  </div>
-
-                  <div class="card-footer">
-                  <!--  
-                    <div class="card-price">
-                      <span class="span">$29.00</span>
-
-                      <del class="del">$39.00</del>
-                    </div>
-                  -->
-
-                    <div class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">47 Estudiantes</span>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/Popular/2.jpg" width="370" height="270" loading="lazy"
-                    alt="Machine Learning A-Z: Hands-On Python and java" class="img-cover">
-                </figure>
-
-                <div class="card-actions">
-
-                  <span class="badge">Advanced</span>
-
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <ion-icon name="heart"></ion-icon>
-                  </button>
-
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">48 Lecciones</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Trabajo del PSP con estudiantes del 4to A de Primaria</a>
-                  </h3>
-
-                  <div class="rating-wrapper">
-
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <span class="rating-text">(18 Visto)</span>
-
-                  </div>
-                
-                  <div class="card-footer">
-                  
-                    <!--
-                    <div class="card-price">
-                      <span class="span">Free</span>
-                    </div>
-
-                  -->
-
-                    <div class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">65 Estudiantes</span>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/Popular/3.jpg" width="370" height="270" loading="lazy"
-                    alt="Achieving Advanced in Insights with Big" class="img-cover">
-                </figure>
-
-                <div class="card-actions">
-
-                  <span class="badge">Basic</span>
-
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <ion-icon name="heart"></ion-icon>
-                  </button>
-
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">80 Lecciones</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Trabajo del PSP 2023, " 3ero A" de Primaria</a>
-                  </h3>
-
-                  <div class="rating-wrapper">
-
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <span class="rating-text">(18 Visto)</span>
-
-                  </div>
-
-                  <div class="card-footer">
-                    <!--  
-                    <div class="card-price">
-                      <span class="span">$59.00</span>
-
-                      <del class="del">$69.00</del>
-                    </div>
-                  -->
-                    <div class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">42 Estudiantes</span>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <!--
-              <div class="course-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/course-4.jpg" width="370" height="270" loading="lazy"
-                    alt="Education Makes A Person A Responsible Citizen" class="img-cover">
-                </figure>
-
-                <div class="card-actions">
-
-                  <span class="badge">Intermediate</span>
-
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <ion-icon name="heart"></ion-icon>
-                  </button>
-
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">31 Lecciones</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Education Makes A Person A Responsible Citizen</a>
-                  </h3>
-
-                  <div class="rating-wrapper">
-
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <span class="rating-text">(18 Visto)</span>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <div class="card-price">
-                      <span class="span">$49.00</span>
-
-                      <del class="del">$59.00</del>
-                    </div>
-
-                    <div class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">46 Estudiantes</span>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-              -->
-            </li>
-
-            <li>
-              <!--
-              <div class="course-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/course-5.jpg" width="370" height="270" loading="lazy"
-                    alt="Building A Better World One Student At A Time" class="img-cover">
-                </figure>
-
-                <div class="card-actions">
-
-                  <span class="badge">Advanced</span>
-
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <ion-icon name="heart"></ion-icon>
-                  </button>
-
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">36 Lecciones</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Building A Better World One Student At A Time</a>
-                  </h3>
-
-                  <div class="rating-wrapper">
-
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <span class="rating-text">(18 Visto)</span>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <div class="card-price">
-                      <span class="span">$29.00</span>
-
-                      <del class="del">$39.00</del>
-                    </div>
-
-                    <div class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">91 Estudiantes</span>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            -->
-            </li>
-
-            <li>
-              <!--
-              <div class="course-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/course-6.jpg" width="370" height="270" loading="lazy"
-                    alt="Education is About Forming Faithful Disciples" class="img-cover">
-                </figure>
-
-                <div class="card-actions">
-
-                  <span class="badge">Basic</span>
-
-                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
-                    <ion-icon name="heart"></ion-icon>
-                  </button>
-
-                </div>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">21 Lecciones</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Education is About Forming Faithful Disciples</a>
-                  </h3>
-
-                  <div class="rating-wrapper">
-
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <span class="rating-text">(18 Visto)</span>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <div class="card-price">
-                      <span class="span">$79.00</span>
-
-                      <del class="del">$89.00</del>
-                    </div>
-
-                    <div class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="card-meta-text">22 Estudiantes</span>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-              -->
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn btn-primary">
-            <span class="span">Ver detalle</span>
-
-            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 text-xl font-extrabold tracking-tight">
+          <span class="text-[#2563eb]"><i class='bx bxl-tiktok text-2xl'></i></span>
+          <span class="text-white">Tik<span class="text-[#2563eb]">Flow</span></span>
+        </a>
+
+        <!-- Menú Desktop -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+          <a href="#servicios" class="hover:text-white transition">Servicios</a>
+          <a href="#planes" class="hover:text-white transition">Planes</a>
+          <a href="#dashboard" class="hover:text-white transition">Dashboard</a>
+          <a href="#clientes" class="hover:text-white transition">Clientes</a>
+          <a href="#blog" class="hover:text-white transition">Blog</a>
+          <a href="#faq" class="hover:text-white transition">FAQ</a>
+          <a href="#contacto" class="hover:text-white transition">Contacto</a>
+        </nav>
+
+        <!-- Acciones -->
+        <div class="flex items-center gap-4">
+          <button id="darkToggle" class="text-gray-300 hover:text-white text-2xl transition"
+            aria-label="Alternar modo oscuro">
+            <i class='bx bx-moon'></i>
+          </button>
+          <a href="#planes"
+            class="hidden md:inline-block bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-sm font-semibold px-5 py-2 rounded-full transition shadow-lg shadow-blue-600/30">
+            Comenzar Ahora
           </a>
-
+          <!-- Botón hamburguesa -->
+          <button id="menuBtn" class="lg:hidden text-3xl text-white" aria-label="Abrir menú">
+            <i class='bx bx-menu'></i>
+          </button>
         </div>
-      </section>
+      </div>
+    </div>
 
+    <!-- Menú Mobile -->
+    <div id="mobileMenu"
+      class="lg:hidden fixed inset-0 bg-[#0b0b0e]/95 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-8 text-xl font-medium text-gray-200 transition-all duration-500 -translate-y-full opacity-0 pointer-events-none">
+      <button id="closeMenuBtn" class="absolute top-6 right-6 text-4xl text-white" aria-label="Cerrar menú">
+        <i class='bx bx-x'></i>
+      </button>
+      <a href="#servicios" class="hover:text-[#2563eb] transition">Servicios</a>
+      <a href="#planes" class="hover:text-[#2563eb] transition">Planes</a>
+      <a href="#dashboard" class="hover:text-[#2563eb] transition">Dashboard</a>
+      <a href="#clientes" class="hover:text-[#2563eb] transition">Clientes</a>
+      <a href="#blog" class="hover:text-[#2563eb] transition">Blog</a>
+      <a href="#faq" class="hover:text-[#2563eb] transition">FAQ</a>
+      <a href="#contacto" class="hover:text-[#2563eb] transition">Contacto</a>
+      <a href="#planes"
+        class="bg-[#2563eb] px-8 py-3 rounded-full text-white font-bold shadow-lg shadow-blue-600/30">Comenzar</a>
+    </div>
+  </header>
 
+  <!-- ========== HERO ========== -->
+  <section class="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
+    <!-- Fondo con glow -->
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-blue-600/20 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-purple-600/20 rounded-full blur-[120px]"></div>
+    </div>
 
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="section cta" aria-label="workshop" style="background-image: url('./assets/images/cta-bg.png')">
-        <div class="container">
-
-          <figure class="cta-banner">
-            <img src="./assets/images/Portadas/1.jpg" width="580" height="380" loading="lazy" alt="cta banner"
-              class="img-cover">
-          </figure>
-
-          <div class="cta-content">
-
-            <p class="section-subtitle">Talleres</p>
-
-            <h2 class="h2 section-title">Actividades con los alumnos</h2>
-
-            <p class="section-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet, consect adipi scing elit, sed do
-              eiusmod tempor
-              incididunt ut sed do eiusmod tempor incididunt ut labore et dolore aliqua.
-            </p>
-
-            <a href="#" class="btn btn-secondary">
-              <span class="span">Ver detalle</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Texto -->
+        <div class="space-y-6 text-center lg:text-left">
+          <div
+            class="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 text-sm text-gray-300">
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            <span>Disponible 24/7 · Sin límites</span>
           </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #EVENT
-      -->
-
-      <section class="section event" id="event" aria-label="event">
-        <div class="container">
-
-          <p class="section-subtitle">Actividades Realiadas</p>
-
-          <h2 class="h2 section-title">UU.E. NEPTALY SANDOVAL I,INICIAL Y PRIMARIA</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="event-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/actividades/1.jpg" width="370" height="250" loading="lazy"
-                    alt="Equipo de Innovación y Emprendimiento Tecnológico" class="img-cover">
-                </figure>
-
-                <time class="badge" datetime="2023-12-04">04 Mar 2023</time>
-
-                <div class="card-content">
-
-                  <address class="card-address">
-                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Santa Cruz de la Sierra, Bolivia</span>
-                  </address>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">1ero B de Primaria, trabajando en el huerto escolar medicinal</a>
-                  </h3>
-
-                  <a href="#" class="btn-link">
-                    <span class="span">Ver detalle</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/actividades/2.jpg" width="370" height="250" loading="lazy"
-                    alt="Feria virtual de empleos a tiempo parcial de primavera para estudiantes" class="img-cover">
-                </figure>
-
-                <time class="badge" datetime="2023-10-30">02 Feb 2023</time>
-
-                <div class="card-content">
-
-                  <address class="card-address">
-                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Santa Cruz de la Sierra, Bolivia</span>
-                  </address>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">U.E. NEPTALY SANDOVAL I,INICIAL Y PRIMARIA, TURNO MAÑANA en la Inauguración del Año Escolar 2023.</a>
-                  </h3>
-
-                  <a href="#" class="btn-link">
-                    <span class="span">Ver detalle</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/actividades/3.jpg" width="370" height="250" loading="lazy"
-                    alt="Explorations of Regional Chief Executive Network" class="img-cover">
-                </figure>
-
-                <time class="badge" datetime="2023-09-18">18 Nov 2022</time>
-
-                <div class="card-content">
-
-                  <address class="card-address">
-                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Santa Cruz de la Sierra, Bolivia</span>
-                  </address>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Promoción 2022 del NIVEL INICIAL</a>
-                  </h3>
-
-                  <a href="#" class="btn-link">
-                    <span class="span">Ver detalle</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #NEWSLETTER
-     
-
-      <section class="section newsletter" aria-label="newsletter"
-        style="background-image: url('./assets/images/newsletter-bg.jpg')">
-      -->
-        <!--
-          <p class="section-subtitle">SUSCRIBIRSE AL BOLETÍN INFORMATIVO</p>
-
-          <h2 class="h2 section-title">Obtenga todas las últimas noticias</h2>
-
-          <form action="" class="newsletter-form">
-
-            <div class="input-wrapper">
-              <input type="email" name="email_address" aria-label="email" placeholder="Enter your mail address" required
-                class="email-field">
-
-              <ion-icon name="mail-open-outline" aria-hidden="true"></ion-icon>
-            </div>
-
-            <button type="submit" class="btn btn-primary">
-              <span class="span">Subscribe</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </button>
-
-          </form>
-        -->
-      
-
-  
-        
-              <section class="hero" id="home" aria-label="hero" class="section newsletter" aria-label="newsletter">
-        
-              <p class="section-subtitle">Como llegar a la unidad educativa</p>
-
-              <h2 class="h2 section-title">CONTACTO</h2>
-  
-              <div class="container">
-             
-
-                    <div id="map">
-                    </div>
-         
-                <div class="hero-content">
-  
-                  <p class="hero-text">           
-                      <address class="card-address">
-                        <span class="span">Santa Cruz de la Sierra, Bolivia
-                          <br>
-                          Dirección:
-                          Av 4to anillo
-                          <br>
-                          Teléfono:
-                          (591)
-                          <br>
-                          Correo:
-                          correo@gmail.com
-                          <br>
-                          Licencias:
-                          correo@gmail.com
-                          <br>
-                          Sugerencias:
-                          correo@gmail.com
-            
-                        </span>
-                      </address>
-                   
-                  </p>
-      
-                  <a href="#" class="btn btn-primary">
-                    <span class="span">Ver Mas</span>
-      
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-      
-                </div>
-              </div>
-            </section>
-
-        
-    
-
-
-
-
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
-      <div class="footer-top">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">U.E. Neptaly Sandoval I-Turno Mañana-Nivel Inicial y Primaria</a>
-
-          <p class="section-text">
-            It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its
-            layout. The point of using Lorem Ipsum.
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.1] tracking-tight">
+            Domina TikTok <br />
+            <!-- <span class="bg-gradient-to-r from-[#2563eb] via-purple-500 to-[#2563eb] bg-clip-text text-transparent">con
+              IA y Datos</span> -->
+          </h1>
+          <p class="text-base sm:text-lg text-gray-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            La plataforma todo-en-uno para crear, analizar y escalar campañas en TikTok. Automatiza, optimiza y
+            multiplica tu alcance.
           </p>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-pinterest"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
+          <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <a href="#planes"
+              class="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-7 py-3 rounded-full transition shadow-lg shadow-blue-600/40 flex items-center gap-2">
+              Comenzar <i class='bx bx-rocket text-xl'></i>
+            </a>
+            <a href="#planes"
+              class="border border-white/20 hover:border-white/40 text-white font-medium px-7 py-3 rounded-full transition backdrop-blur-sm">
+              Ver Planes
+            </a>
+          </div>
         </div>
 
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Explorar</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Sobre nosotros</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Próximos Eventos</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Blog y noticias</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Preguntas frecuentes Pregunta</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Testimonio</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">política de privacidad</span>
-            </a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Enlaces</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Contácto</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Plan de precios</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Perfil del instructor</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Preguntas más frecuentes</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Cursos Populares</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-              <span class="span">Términos y condiciones</span>
-            </a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Contacto</p>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-
-            <address class="footer-link">
-              24to anillo santa cruz
-            </address>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="call" aria-hidden="true"></ion-icon>
-
-            <a href="tel:+15917657839" class="footer-link">+ 1 (591) 000000</a>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="call" aria-hidden="true"></ion-icon>
-
-            <a href="tel:+15917657840" class="footer-link">+ 1 (591) 00000</a>
-          </li>
-
-          <li class="footer-item">
-            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-            <a href="mailto:contact@neptaly.com" class="footer-link">contact@neptaly.com</a>
-          </li>
-
-        </ul>
-
+        <!-- Dashboard Mock -->
+        <div class="relative w-full max-w-2xl mx-auto lg:mx-0">
+          <div
+            class="bg-[#14141a] rounded-2xl border border-white/10 shadow-2xl shadow-blue-600/20 overflow-hidden backdrop-blur-sm">
+            <!-- Header del dashboard -->
+            <div class="flex items-center justify-between px-5 py-3 border-b border-white/10">
+              <div class="flex items-center gap-3">
+                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+              </div>
+              <p class="text-xs text-gray-500 font-mono">dashboard.tikflow.dev</p>
+              <i class='bx bx-dots-vertical-rounded text-gray-500 text-xl'></i>
+            </div>
+            <!-- Contenido mock -->
+            <div class="p-5 space-y-4">
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div class="bg-white/5 rounded-xl p-3 text-center border border-white/5">
+                  <p class="text-xs text-gray-400">Seguidores</p>
+                  <p class="text-xl font-bold text-white">124.3K</p>
+                  <span class="text-xs text-green-400">↑ +12.4%</span>
+                </div>
+                <div class="bg-white/5 rounded-xl p-3 text-center border border-white/5">
+                  <p class="text-xs text-gray-400">Engagement</p>
+                  <p class="text-xl font-bold text-white">8.7%</p>
+                  <span class="text-xs text-green-400">↑ +2.1%</span>
+                </div>
+                <div class="bg-white/5 rounded-xl p-3 text-center border border-white/5">
+                  <p class="text-xs text-gray-400">Alcance</p>
+                  <p class="text-xl font-bold text-white">2.8M</p>
+                  <span class="text-xs text-green-400">↑ +18%</span>
+                </div>
+                <div class="bg-white/5 rounded-xl p-3 text-center border border-white/5">
+                  <p class="text-xs text-gray-400">Visualizaciones</p>
+                  <p class="text-xl font-bold text-white">8.1M</p>
+                  <span class="text-xs text-green-400">↑ +22%</span>
+                </div>
+              </div>
+              <!-- Gráfico simulado -->
+              <div class="h-24 flex items-end gap-1.5 pt-2">
+                <div class="w-full h-full flex items-end gap-1">
+                  <div class="bg-blue-500/60 h-[40%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[65%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[45%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[80%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[55%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[90%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[70%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[95%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[50%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[75%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[60%] w-full rounded-t-sm"></div>
+                  <div class="bg-blue-500/60 h-[85%] w-full rounded-t-sm"></div>
+                </div>
+              </div>
+              <div class="flex justify-between text-xs text-gray-500">
+                <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+              </div>
+            </div>
+          </div>
+          <!-- Badge flotante -->
+          <div
+            class="absolute -top-3 -right-3 bg-[#2563eb] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg shadow-blue-600/40">
+            LIVE
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="footer-bottom">
-        <p class="copyright">
-          Copyright 2023 U.E. Neptaly Sandoval I-Turno Mañana-Nivel Inicial y Primaria. All Rights Reserved by <a href="#" class="copyright-link">Luishiño</a>
-        </p>
+  <!-- ========== EMPRESAS (SLIDER) ========== -->
+  <section class="py-12 border-y border-white/5 bg-white/5 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center text-sm text-gray-400 uppercase tracking-widest mb-6">Empresas que confían en TikFlow</p>
+      <div id="companiesSlider"
+        class="flex items-center justify-center gap-12 flex-wrap md:flex-nowrap overflow-hidden">
+        <div class="text-gray-500 text-2xl font-bold opacity-60">TechCorp</div>
+        <div class="text-gray-500 text-2xl font-bold opacity-60">Brandify</div>
+        <div class="text-gray-500 text-2xl font-bold opacity-60">SocialBoost</div>
+        <div class="text-gray-500 text-2xl font-bold opacity-60">ViralMinds</div>
+        <div class="text-gray-500 text-2xl font-bold opacity-60">DataFlow</div>
+        <div class="text-gray-500 text-2xl font-bold opacity-60">Influenz</div>
       </div>
+    </div>
+  </section>
 
+  <!-- ========== ESTADÍSTICAS ========== -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+        <div
+          class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10 hover:border-blue-500/50 transition">
+          <p class="text-3xl font-bold text-white"><span class="counter" data-target="12456">0</span>+</p>
+          <p class="text-sm text-gray-400">Clientes</p>
+        </div>
+        <div
+          class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10 hover:border-blue-500/50 transition">
+          <p class="text-3xl font-bold text-white"><span class="counter" data-target="348">0</span>+</p>
+          <p class="text-sm text-gray-400">Campañas</p>
+        </div>
+        <div
+          class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10 hover:border-blue-500/50 transition">
+          <p class="text-3xl font-bold text-white"><span class="counter" data-target="99.9">0.0</span>%</p>
+          <p class="text-sm text-gray-400">Disponibilidad</p>
+        </div>
+        <div
+          class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10 hover:border-blue-500/50 transition">
+          <p class="text-3xl font-bold text-white"><span class="counter" data-target="45">0</span>+</p>
+          <p class="text-sm text-gray-400">Países</p>
+        </div>
+        <div
+          class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10 hover:border-blue-500/50 transition">
+          <p class="text-3xl font-bold text-white"><span class="counter" data-target="1892">0</span>+</p>
+          <p class="text-sm text-gray-400">Reportes</p>
+        </div>
+        <div
+          class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10 hover:border-blue-500/50 transition">
+          <p class="text-3xl font-bold text-white"><span class="counter" data-target="8423">0</span>+</p>
+          <p class="text-sm text-gray-400">Usuarios</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section id="servicios" class="py-20 bg-[#0f0f14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Servicios <span class="text-[#2563eb]">Premium</span></h2>
+        <p class="text-gray-400 mt-2 max-w-xl mx-auto">Más de 12 soluciones potenciadas con IA para llevar tu marca al
+          siguiente nivel.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <!-- Servicio 1 -->
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-line-chart text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Marketing Digital</h3>
+          <p class="text-sm text-gray-400">Estrategias integrales para TikTok.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-cloud text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">TikTok Ads</h3>
+          <p class="text-sm text-gray-400">Campañas publicitarias automatizadas.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-data text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">SEO TikTok</h3>
+          <p class="text-sm text-gray-400">Optimización de contenido y hashtags.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-chat text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Consultoría</h3>
+          <p class="text-sm text-gray-400">Asesoría personalizada para tu marca.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-cog text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Automatización</h3>
+          <p class="text-sm text-gray-400">Flujos de trabajo sin intervención.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-server text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Dashboard</h3>
+          <p class="text-sm text-gray-400">Panel de control en tiempo real.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-analyse text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Analítica</h3>
+          <p class="text-sm text-gray-400">Métricas avanzadas y predicciones.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-file text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Reportes</h3>
+          <p class="text-sm text-gray-400">Informes descargables en PDF.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-cloud-upload text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Infraestructura</h3>
+          <p class="text-sm text-gray-400">Escalabilidad y alta disponibilidad.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-brain text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">IA</h3>
+          <p class="text-sm text-gray-400">Modelos predictivos y NLP.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-rocket text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Optimización</h3>
+          <p class="text-sm text-gray-400">Mejora continua de campañas.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-shield text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Seguridad</h3>
+          <p class="text-sm text-gray-400">Protección de datos y privacidad.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-link-alt text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Integraciones</h3>
+          <p class="text-sm text-gray-400">Conecta con CRM y redes sociales.</p>
+        </div>
+        <div
+          class="group bg-white/5 hover:bg-white/10 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-600/20">
+          <i class='bx bx-bar-chart-alt-2 text-4xl text-[#2563eb]'></i>
+          <h3 class="text-lg font-bold mt-3">Growth Hacking</h3>
+          <p class="text-sm text-gray-400">Técnicas de crecimiento viral.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BENEFICIOS ========== -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Beneficios <span class="text-[#2563eb]">Exclusivos</span></h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Análisis en tiempo real</p>
+            <p class="text-sm text-gray-400">Datos actualizados al segundo.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Automatización inteligente</p>
+            <p class="text-sm text-gray-400">Flujos sin intervención humana.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Dashboards personalizables</p>
+            <p class="text-sm text-gray-400">Adapta tu vista de datos.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Soporte 24/7</p>
+            <p class="text-sm text-gray-400">Asistencia prioritaria.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Seguridad de grado empresarial</p>
+            <p class="text-sm text-gray-400">Cifrado y protección avanzada.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Integración con CRM</p>
+            <p class="text-sm text-gray-400">Conecta con tus herramientas favoritas.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Reportes automáticos</p>
+            <p class="text-sm text-gray-400">Programa envíos diarios/semanales.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Escalabilidad ilimitada</p>
+            <p class="text-sm text-gray-400">Crece sin restricciones.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">API abierta</p>
+            <p class="text-sm text-gray-400">Desarrolla sobre nuestra plataforma.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Múltiples cuentas</p>
+            <p class="text-sm text-gray-400">Gestiona varios perfiles.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Pruebas A/B</p>
+            <p class="text-sm text-gray-400">Optimiza con experimentos.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-blue-500/50 transition">
+          <i class='bx bx-check-circle text-2xl text-green-400'></i>
+          <div>
+            <p class="font-semibold">Comunidad activa</p>
+            <p class="text-sm text-gray-400">Foro y eventos exclusivos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DASHBOARD PREVIEW ========== -->
+  <section id="dashboard" class="py-20 bg-[#0f0f14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Dashboard <span class="text-[#2563eb]">Profesional</span></h2>
+        <p class="text-gray-400 mt-2">Todo el control de tus campañas en una sola interfaz.</p>
+      </div>
+      <div class="bg-[#14141a] rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-blue-600/20">
+        <!-- Sidebar + contenido mock -->
+        <div class="flex flex-col md:flex-row">
+          <!-- Sidebar -->
+          <div class="md:w-64 bg-white/5 p-5 border-r border-white/10">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 text-white font-semibold"><i class='bx bx-grid-alt text-xl'></i>
+                Dashboard</div>
+              <div class="flex items-center gap-3 text-gray-400 hover:text-white transition"><i
+                  class='bx bx-line-chart text-xl'></i> Analíticas</div>
+              <div class="flex items-center gap-3 text-gray-400 hover:text-white transition"><i
+                  class='bx bx-group text-xl'></i> Audiencia</div>
+              <div class="flex items-center gap-3 text-gray-400 hover:text-white transition"><i
+                  class='bx bx-calendar text-xl'></i> Calendario</div>
+              <div class="flex items-center gap-3 text-gray-400 hover:text-white transition"><i
+                  class='bx bx-file text-xl'></i> Reportes</div>
+              <div class="flex items-center gap-3 text-gray-400 hover:text-white transition"><i
+                  class='bx bx-cog text-xl'></i> Ajustes</div>
+            </div>
+          </div>
+          <!-- Contenido -->
+          <div class="flex-1 p-6 space-y-6">
+            <div class="flex flex-wrap justify-between items-center">
+              <h3 class="text-xl font-bold">Bienvenido de nuevo, <span class="text-[#2563eb]">Equipo</span></h3>
+              <div class="flex gap-3 text-sm">
+                <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full">Última semana</span>
+                <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded-full"><i class='bx bx-trending-up'></i>
+                  +18%</span>
+              </div>
+            </div>
+            <!-- KPIs -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div class="bg-white/5 p-4 rounded-xl">
+                <p class="text-gray-400 text-xs">Seguidores</p>
+                <p class="text-2xl font-bold">124.3K</p><span class="text-xs text-green-400">↑ 12%</span>
+              </div>
+              <div class="bg-white/5 p-4 rounded-xl">
+                <p class="text-gray-400 text-xs">Engagement</p>
+                <p class="text-2xl font-bold">8.7%</p><span class="text-xs text-green-400">↑ 2.1%</span>
+              </div>
+              <div class="bg-white/5 p-4 rounded-xl">
+                <p class="text-gray-400 text-xs">Alcance</p>
+                <p class="text-2xl font-bold">2.8M</p><span class="text-xs text-green-400">↑ 18%</span>
+              </div>
+              <div class="bg-white/5 p-4 rounded-xl">
+                <p class="text-gray-400 text-xs">Conversiones</p>
+                <p class="text-2xl font-bold">1,243</p><span class="text-xs text-green-400">↑ 9%</span>
+              </div>
+            </div>
+            <!-- Gráfico y tabla -->
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white/5 p-4 rounded-xl">
+                <p class="text-sm font-semibold mb-3">Visitas por día</p>
+                <div class="h-20 flex items-end gap-1">
+                  <div class="bg-blue-500/60 w-full h-[30%] rounded-t"></div>
+                  <div class="bg-blue-500/60 w-full h-[55%] rounded-t"></div>
+                  <div class="bg-blue-500/60 w-full h-[40%] rounded-t"></div>
+                  <div class="bg-blue-500/60 w-full h-[75%] rounded-t"></div>
+                  <div class="bg-blue-500/60 w-full h-[60%] rounded-t"></div>
+                  <div class="bg-blue-500/60 w-full h-[90%] rounded-t"></div>
+                  <div class="bg-blue-500/60 w-full h-[80%] rounded-t"></div>
+                </div>
+              </div>
+              <div class="bg-white/5 p-4 rounded-xl">
+                <p class="text-sm font-semibold mb-3">Últimas actividades</p>
+                <ul class="text-sm space-y-2 text-gray-300">
+                  <li class="flex items-center gap-2"><i class='bx bx-check-circle text-green-400'></i> Campaña "Verano"
+                    lanzada</li>
+                  <li class="flex items-center gap-2"><i class='bx bx-check-circle text-green-400'></i> Nuevo reporte
+                    disponible</li>
+                  <li class="flex items-center gap-2"><i class='bx bx-check-circle text-green-400'></i> 5 nuevos leads
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CARACTERÍSTICAS (30+) ========== -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold"><span class="text-[#2563eb]">30+</span> Características</h2>
+        <p class="text-gray-400">Todo lo que necesitas para dominar TikTok.</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Analytics</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Seguimiento</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Automatización</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> IA Predictiva</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Reports</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> A/B Testing</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Multi-cuenta</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> API</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Webhooks</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Seguridad</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> 24/7 Soporte</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> CRM</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Email Marketing</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Social Listening</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Hashtags</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Influencers</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Contenido Viral</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Programación</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Live Streaming</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> E-commerce</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Gamificación</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Encuestas</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Sorteos</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> NFTs</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Web3</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Metaverso</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Realidad Aumentada</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Filtros</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Efectos</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Música</div>
+        <div
+          class="bg-white/5 p-3 rounded-xl text-center border border-white/5 hover:border-blue-500/50 transition text-sm">
+          <i class='bx bx-check text-blue-400 text-xl'></i> Tendencias</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PLANES ========== -->
+  <section id="planes" class="py-20 bg-[#0f0f14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Planes <span class="text-[#2563eb]">Flexibles</span></h2>
+        <p class="text-gray-400">Elige el plan que se adapte a tus necesidades.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Starter -->
+        <div
+          class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition hover:scale-105">
+          <h3 class="text-xl font-bold">Starter</h3>
+          <p class="text-gray-400 text-sm">Para empezar</p>
+          <p class="text-3xl font-bold mt-3">$29 <span class="text-sm font-normal text-gray-400">/mes</span></p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-300">
+            <li><i class='bx bx-check text-green-400'></i> 1 cuenta</li>
+            <li><i class='bx bx-check text-green-400'></i> Análisis básico</li>
+            <li><i class='bx bx-check text-green-400'></i> Soporte por email</li>
+          </ul>
+          <a href="#"
+            class="mt-6 block text-center bg-white/10 hover:bg-white/20 text-white font-semibold py-2 rounded-full transition">Elegir</a>
+        </div>
+        <!-- Creator -->
+        <div
+          class="bg-white/5 rounded-2xl p-6 border border-[#2563eb]/50 hover:border-blue-500/70 transition hover:scale-105 shadow-lg shadow-blue-600/20">
+          <h3 class="text-xl font-bold">Creator</h3>
+          <p class="text-gray-400 text-sm">Para creadores</p>
+          <p class="text-3xl font-bold mt-3">$59 <span class="text-sm font-normal text-gray-400">/mes</span></p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-300">
+            <li><i class='bx bx-check text-green-400'></i> 3 cuentas</li>
+            <li><i class='bx bx-check text-green-400'></i> Analítica avanzada</li>
+            <li><i class='bx bx-check text-green-400'></i> Soporte prioritario</li>
+          </ul>
+          <a href="#"
+            class="mt-6 block text-center bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold py-2 rounded-full transition shadow-lg shadow-blue-600/30">Elegir</a>
+        </div>
+        <!-- Business -->
+        <div
+          class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition hover:scale-105">
+          <h3 class="text-xl font-bold">Business</h3>
+          <p class="text-gray-400 text-sm">Para empresas</p>
+          <p class="text-3xl font-bold mt-3">$99 <span class="text-sm font-normal text-gray-400">/mes</span></p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-300">
+            <li><i class='bx bx-check text-green-400'></i> 10 cuentas</li>
+            <li><i class='bx bx-check text-green-400'></i> IA predictiva</li>
+            <li><i class='bx bx-check text-green-400'></i> Soporte 24/7</li>
+          </ul>
+          <a href="#"
+            class="mt-6 block text-center bg-white/10 hover:bg-white/20 text-white font-semibold py-2 rounded-full transition">Elegir</a>
+        </div>
+        <!-- Enterprise -->
+        <div
+          class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-blue-500/50 transition hover:scale-105">
+          <h3 class="text-xl font-bold">Enterprise</h3>
+          <p class="text-gray-400 text-sm">A medida</p>
+          <p class="text-3xl font-bold mt-3">Custom</p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-300">
+            <li><i class='bx bx-check text-green-400'></i> Ilimitado</li>
+            <li><i class='bx bx-check text-green-400'></i> API dedicada</li>
+            <li><i class='bx bx-check text-green-400'></i> Soporte VIP</li>
+          </ul>
+          <a href="#"
+            class="mt-6 block text-center bg-white/10 hover:bg-white/20 text-white font-semibold py-2 rounded-full transition">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Testimonios <span class="text-[#2563eb]">Reales</span></h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-blue-500/50 transition">
+          <div class="flex text-yellow-400 text-xl">★★★★★</div>
+          <p class="mt-3 text-gray-300">"TikFlow transformó nuestra estrategia en TikTok. Pasamos de 10K a 100K
+            seguidores en 3 meses."</p>
+          <div class="flex items-center gap-3 mt-4">
+            <div class="w-10 h-10 rounded-full bg-blue-500/30 flex items-center justify-center text-white font-bold">JD
+            </div>
+            <div>
+              <p class="font-semibold">Juan Díaz</p>
+              <p class="text-sm text-gray-400">CMO · Brandify</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-blue-500/50 transition">
+          <div class="flex text-yellow-400 text-xl">★★★★★</div>
+          <p class="mt-3 text-gray-300">"La automatización y los reportes nos ahorran horas cada semana. Esencial para
+            nuestro equipo."</p>
+          <div class="flex items-center gap-3 mt-4">
+            <div class="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center text-white font-bold">
+              MG</div>
+            <div>
+              <p class="font-semibold">María Gómez</p>
+              <p class="text-sm text-gray-400">CEO · SocialBoost</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-blue-500/50 transition">
+          <div class="flex text-yellow-400 text-xl">★★★★★</div>
+          <p class="mt-3 text-gray-300">"El dashboard es increíble. Tenemos visibilidad total de nuestras campañas en
+            tiempo real."</p>
+          <div class="flex items-center gap-3 mt-4">
+            <div class="w-10 h-10 rounded-full bg-green-500/30 flex items-center justify-center text-white font-bold">CR
+            </div>
+            <div>
+              <p class="font-semibold">Carlos Ruiz</p>
+              <p class="text-sm text-gray-400">Director · ViralMinds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BLOG ========== -->
+  <section id="blog" class="py-20 bg-[#0f0f14]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Blog <span class="text-[#2563eb]">TikFlow</span></h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article
+          class="bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-blue-500/50 transition hover:scale-105">
+          <div
+            class="h-40 bg-gradient-to-br from-blue-600/30 to-purple-600/30 flex items-center justify-center text-6xl">
+            <i class='bx bxl-tiktok'></i></div>
+          <div class="p-5">
+            <span class="text-xs text-blue-400 font-semibold">Tendencias</span>
+            <h3 class="text-lg font-bold mt-1">Cómo crear contenido viral en 2025</h3>
+            <p class="text-sm text-gray-400 mt-2">Descubre las claves para que tus videos se vuelvan virales.</p>
+            <a href="#" class="inline-block mt-3 text-blue-400 text-sm font-semibold hover:underline">Leer más →</a>
+          </div>
+        </article>
+        <article
+          class="bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-blue-500/50 transition hover:scale-105">
+          <div
+            class="h-40 bg-gradient-to-br from-purple-600/30 to-pink-600/30 flex items-center justify-center text-6xl">
+            <i class='bx bx-data'></i></div>
+          <div class="p-5">
+            <span class="text-xs text-purple-400 font-semibold">Analítica</span>
+            <h3 class="text-lg font-bold mt-1">Métricas que importan en TikTok</h3>
+            <p class="text-sm text-gray-400 mt-2">Enfócate en lo que realmente genera valor.</p>
+            <a href="#" class="inline-block mt-3 text-purple-400 text-sm font-semibold hover:underline">Leer más →</a>
+          </div>
+        </article>
+        <article
+          class="bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-blue-500/50 transition hover:scale-105">
+          <div
+            class="h-40 bg-gradient-to-br from-green-600/30 to-blue-600/30 flex items-center justify-center text-6xl"><i
+              class='bx bx-rocket'></i></div>
+          <div class="p-5">
+            <span class="text-xs text-green-400 font-semibold">Estrategia</span>
+            <h3 class="text-lg font-bold mt-1">Automatiza tu crecimiento con IA</h3>
+            <p class="text-sm text-gray-400 mt-2">Ahorra tiempo y escala tus resultados.</p>
+            <a href="#" class="inline-block mt-3 text-green-400 text-sm font-semibold hover:underline">Leer más →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq" class="py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Preguntas <span class="text-[#2563eb]">Frecuentes</span></h2>
+      </div>
+      <div class="space-y-3" id="faqContainer">
+        <div class="faq-item bg-white/5 rounded-xl border border-white/10 overflow-hidden">
+          <button
+            class="faq-btn w-full flex items-center justify-between p-5 text-left font-semibold hover:text-[#2563eb] transition">
+            <span>¿Cómo funciona la prueba gratuita?</span>
+            <i class='bx bx-chevron-down text-2xl transition-transform duration-300'></i>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-5 pt-0 text-gray-400 text-sm">Puedes probar TikFlow sin compromiso durante 14 días. Acceso a
+              todas las funcionalidades.</div>
+          </div>
+        </div>
+        <div class="faq-item bg-white/5 rounded-xl border border-white/10 overflow-hidden">
+          <button
+            class="faq-btn w-full flex items-center justify-between p-5 text-left font-semibold hover:text-[#2563eb] transition">
+            <span>¿Puedo cancelar mi suscripción?</span>
+            <i class='bx bx-chevron-down text-2xl transition-transform duration-300'></i>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-5 pt-0 text-gray-400 text-sm">Sí, puedes cancelar en cualquier momento desde tu panel de
+              control. Sin permanencia.</div>
+          </div>
+        </div>
+        <div class="faq-item bg-white/5 rounded-xl border border-white/10 overflow-hidden">
+          <button
+            class="faq-btn w-full flex items-center justify-between p-5 text-left font-semibold hover:text-[#2563eb] transition">
+            <span>¿Qué métodos de pago aceptan?</span>
+            <i class='bx bx-chevron-down text-2xl transition-transform duration-300'></i>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-5 pt-0 text-gray-400 text-sm">Aceptamos tarjetas de crédito, débito, PayPal y criptomonedas.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item bg-white/5 rounded-xl border border-white/10 overflow-hidden">
+          <button
+            class="faq-btn w-full flex items-center justify-between p-5 text-left font-semibold hover:text-[#2563eb] transition">
+            <span>¿Tienen soporte en español?</span>
+            <i class='bx bx-chevron-down text-2xl transition-transform duration-300'></i>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-5 pt-0 text-gray-400 text-sm">Sí, contamos con soporte en español las 24 horas, los 7 días de
+              la semana.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="py-20 bg-[#0f0f14]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Contáctanos</h2>
+        <p class="text-gray-400">Estamos aquí para ayudarte a crecer.</p>
+      </div>
+      <form id="contactForm" class="bg-white/5 p-8 rounded-2xl border border-white/10 space-y-5">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input type="text" placeholder="Nombre completo"
+            class="bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition"
+            required />
+          <input type="text" placeholder="Empresa"
+            class="bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition" />
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input type="email" placeholder="Correo electrónico"
+            class="bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition"
+            required />
+          <input type="tel" placeholder="WhatsApp"
+            class="bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition" />
+        </div>
+        <textarea rows="4" placeholder="Cuéntanos sobre tu proyecto..."
+          class="bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition w-full"
+          required></textarea>
+        <button type="submit"
+          class="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold py-3 rounded-full transition shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2">
+          Enviar <i class='bx bx-send'></i>
+        </button>
+        <p id="formMessage" class="text-center text-sm text-green-400 hidden"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-[#0a0a0e] border-t border-white/5 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-lg font-bold mb-4">TikFlow</h4>
+          <p class="text-sm text-gray-400">La plataforma SaaS para marketing en TikTok.</p>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-3">Servicios</h5>
+          <ul class="text-sm text-gray-400 space-y-2">
+            <li><a href="#" class="hover:text-white transition">Marketing</a></li>
+            <li><a href="#" class="hover:text-white transition">Analítica</a></li>
+            <li><a href="#" class="hover:text-white transition">Automatización</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-3">Empresa</h5>
+          <ul class="text-sm text-gray-400 space-y-2">
+            <li><a href="#" class="hover:text-white transition">Sobre nosotros</a></li>
+            <li><a href="#" class="hover:text-white transition">Carreras</a></li>
+            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-3">Legal</h5>
+          <ul class="text-sm text-gray-400 space-y-2">
+            <li><a href="#" class="hover:text-white transition">Privacidad</a></li>
+            <li><a href="#" class="hover:text-white transition">Cookies</a></li>
+            <li><a href="#" class="hover:text-white transition">Términos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/5 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+        <p>&copy; 2026 TikFlow. Todos los derechos reservados.</p>
+        <div class="flex gap-4 mt-3 sm:mt-0">
+          <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok text-xl hover:text-white transition'></i></a>
+          <a href="#" aria-label="Instagram"><i class='bx bxl-instagram text-xl hover:text-white transition'></i></a>
+          <a href="#" aria-label="Twitter"><i class='bx bxl-twitter text-xl hover:text-white transition'></i></a>
+          <a href="#" aria-label="YouTube"><i class='bx bxl-youtube text-xl hover:text-white transition'></i></a>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <!-- ========== BOTÓN VOLVER ARRIBA ========== -->
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 z-50 bg-[#2563eb] hover:bg-[#1d4ed8] text-white w-12 h-12 rounded-full shadow-xl shadow-blue-600/40 flex items-center justify-center text-2xl transition-opacity duration-300 opacity-0 pointer-events-none">
+    <i class='bx bx-up-arrow-alt'></i>
+  </button>
 
+  <!-- ========== TOAST ========== -->
+  <div id="toast"
+    class="fixed bottom-24 right-6 z-50 bg-[#14141a] border border-white/10 rounded-xl px-6 py-3 shadow-xl text-white text-sm backdrop-blur-xl translate-y-20 opacity-0 transition-all duration-500 pointer-events-none">
+    <i class='bx bx-check-circle text-green-400 mr-2'></i> <span id="toastMessage">Mensaje enviado con éxito</span>
+  </div>
 
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
-    <ion-icon name="arrow-up"></ion-icon>
-  </a>
-
-  <script
-  src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyDoXPpQqlLk-R1-HEi-PpFLkSUoEhzGDY4&libraries=drawing&v=weekly&region=GB&callback=initMap&v=weekly&channel=2"
-  async></script>
-  <style>
-    /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-    #map {
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        position: relative;
-        width: auto;
-        height: 400px;
-        border: solid #ffffff;
-        border-top-width: 1px;
-        border-left-width: 2px;
-    }
-
-</style>
-
-<script defer>
-
-  function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
-      center: { 
-          lat:-17.7849881 ,
-          lng: -63.154124,
-       },
-       zoom: 14,
-  
-       mapTypeControl: false,
-      zoomControl: false,
-      streetViewControl: false
-    });
-  
-  
-  
-    const drawingManager = new google.maps.drawing.DrawingManager({
-      drawingMode: google.maps.drawing.OverlayType.MARKER,
-      drawingControl: true,
-      drawingControlOptions: {
-        position: google.maps.ControlPosition.TOP_CENTER,
-        drawingModes: [
-          google.maps.drawing.OverlayType.MARKER,
-          google.maps.drawing.OverlayType.CIRCLE,
-          google.maps.drawing.OverlayType.POLYGON,
-          google.maps.drawing.OverlayType.POLYLINE,
-          google.maps.drawing.OverlayType.RECTANGLE,
-        ],
-      },
-      markerOptions: {
-        icon: "{{ asset('img/icon30x45.png') }}",
-        size: new google.maps.Size(71, 71),
-        origin: new google.maps.Point(0, 0),
-        anchor: new google.maps.Point(17, 34),
-        scaledSize: new google.maps.Size(25, 25)
-      },
-      circleOptions: {
-        fillColor: "#ffff00",
-        fillOpacity: 1,
-        strokeWeight: 5,
-        clickable: false,
-        editable: true,
-        zIndex: 1,
-      },
-    });
-  
-    drawingManager.setMap(map);
-  
-  }
-  
-  window.initMap = initMap;
-    /*  
-      function initMap() {
-          const marcador = {
-              lat:-17.78629 ,
-              lng: -63.18117,
-  
-          };
-  
-      
-  
-          const image = {
-              url: "{{ asset('img/micro.png') }}",
-              size: new google.maps.Size(71, 71),
-              origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(17, 34),
-              scaledSize: new google.maps.Size(25, 25)
-              
-          };
-  
-       
-  
-          const map = new google.maps.Map(document.getElementById("map"), {
-              zoom: 14,
-              center: marcador,
-  
-              minZoom: 8,
-              maxZoom: 20,
-              zoomControl: true,
-              zoomControlOptions: {
-              style: google.maps.ZoomControlStyle.DEFAULT
-  
-          }
-  
-          
-  
-          });
-          const marker = new google.maps.Marker({
-              position: marcador,
-              //position: locations[location],
-              map: map,
-              icon: image,
-              title: 'micro',
-              
-          });
-          
-      }
-   */
-  </script>
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js" defer></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
